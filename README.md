@@ -105,6 +105,7 @@ Your questions, suggestions, and feedback can help improve the quality of this s
 
 	Elias Zea (zea@kth.se)
 	Marcus Wallenberg Laboratory for Sound and Vibration Research
+	Department of Engineering Mechanics
 	KTH Royal Institute of Technology
 	Teknikringen 8
 	10044 Stockholm, SWEDEN
