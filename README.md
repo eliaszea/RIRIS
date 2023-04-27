@@ -81,17 +81,21 @@ Below is an overview of the utility functions that are used in the main script. 
 
 3.4.4. `ffst`: vectorized fast finite shearlet transform (both in/out are vectors)
 
-3.4.5. `iffst`: same as 3.4.4. but inverse transform
+3.4.5. `hline`: function to plot horizontal line on an axis
 
-3.4.6. `ista`: iterative soft thresholding algorithm
+3.4.6. `iffst`: same as 3.4.4. but inverse transform
 
-3.4.7. `loadRIRs`: load RIR reference image
+3.4.7. `ista`: iterative soft thresholding algorithm
 
-3.4.8. `lpbp1D`: 1D linear predictive border padding of spatial dimensions
+3.4.8. `loadRIRs`: load RIR reference image
 
-3.4.9. `perforMetrics`: assessment function that outputs performance metrics and figures
+3.4.9. `lpbp1D`: 1D linear predictive border padding of spatial dimensions
 
-3.4.10. `selectionMtrx`: generate masking (selection) matrix
+3.4.10. `perforMetrics`: assessment function that outputs performance metrics and figures
+
+3.4.11. `selectionMtrx`: generate masking (selection) matrix
+
+3.4.12. `vline`: function to plot vertical line on an axis
 
 
 **4. RELEASE HISTORY**
