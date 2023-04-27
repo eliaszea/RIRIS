@@ -42,18 +42,18 @@ _3.1. BASIS FUNCTIONS_
 
 Cone-adapted shearlets for every room (i.e., every $(T,M)$ combination) and for values of $\tau$ (decomposition scales) $2$ to $5$. 
 
-Example: ‘Balder_tau_4.mat’ contains the $K \times T \times M$ shearlet bases used in the meeting room `Balder` provided a 4-scale dictionary (i.e. $K = 61$).
+Example: _‘Balder_tau_4.mat’_ contains the $K \times T \times M$ shearlet bases used in the meeting room `Balder` provided a 4-scale dictionary (i.e. $K = 61$).
 
 These basis functions are computed with the [Fast Finite Shearlet Transform toolbox](https://github.com/rujieyin/toolbox_FFST), copyright 2014 Sören Häuser.
 
 _3.2. MEASUREMENT DATA_
 
-Reference RIR images for each room. These _.mat_ files are loaded with the utility function ‘loadRIRs’. The content of each file is a structure ‘out’ with fields: 
+Reference RIR images for each room. These _.mat_ files are loaded with the utility function `loadRIRs`. The content of each file is a structure `out` with fields: 
 
-	- `image`:  	T x M numeric array 
-	- `fs`: 	temporal sampling frequency
-	- `T`:		no. time samples
-	- `M`: 		no. microphones
+	- image:  	T x M numeric array 
+	- fs: 	temporal sampling frequency
+	- T:		no. time samples
+	- M: 		no. microphones
  
 _3.3. REGULARIZATION DATA_
 
@@ -64,9 +64,10 @@ Example: _‘Freja_u3_tau3.mat’_ contains the value of $\beta^\star$ in Freja,
 In the main script, the default is to load these parameters (avoiding the need to maximize the curvature every time). If one wants to run the maximization of $J(\beta)$ anyway, setting ‘paretoFlag’ to 1 in Line 89 does the trick. Be careful on where these end up stored.
 
 The content of each .mat file is a structure `reguThresh` with fields:
-- `beta_star`: 	value of $\beta$ at which $J(\beta)$ attains a maximum
-- `Jcurve`:	curvature function $J(\beta)$
-- `beta_set`: 	pool of values of $\beta$ for maximization of $J(\beta)$
+
+	- beta_star: 	value of $\beta$ at which $J(\beta)$ attains a maximum
+	- Jcurve:	curvature function $J(\beta)$
+	- beta_set: 	pool of values of $\beta$ for maximization of $J(\beta)$
 
 _3.4. UTILITY FUNCTIONS_
 
