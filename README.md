@@ -5,7 +5,7 @@ RIRIS Room Impulse Response Interpolation with Shearlets
 
 RIRIS (Room Impulse Response Interpolation with Shearlets) contains the MATLAB implementation of the algorithm in [^1], on RIR interpolation using shearlet dictionaries. 
 
-[^1]: [E. Zea, “Compressed sensing of impulse responses in rooms of unknown properties and contents,” J. Sound Vib.  459, 114871 (2019)][http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1340771&dswid=-7099].
+[^1]: [E. Zea, “Compressed sensing of impulse responses in rooms of unknown properties and contents,” J. Sound Vib.  459, 114871 (2019)](http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1340771&dswid=-7099).
 
 RIRIS is covered by a GPL v3 license (see LICENSE for license terms).
 
