@@ -50,10 +50,10 @@ _3.2. MEASUREMENT DATA_
 
 Reference RIR images for each room. These _.mat_ files are loaded with the utility function `loadRIRs`. The content of each file is a structure `out` with fields: 
 
-	- image:  	T x M numeric array 
-	- fs: 		temporal sampling frequency
-	- T:		no. time samples
-	- M: 		no. microphones
+- `image`:  	$T \times M$ numeric array 
+- `fs`: 	temporal sampling frequency
+- `T`:		no. time samples
+- `M`: 		no. microphones
  
 _3.3. REGULARIZATION DATA_
 
@@ -66,8 +66,8 @@ In the main script, the default is to load these parameters (avoiding the need t
 The content of each .mat file is a structure `reguThresh` with fields:
 
 - `beta_star`: 	value of $\beta$ at which $J(\beta)$ attains a maximum
-	- Jcurve:	curvature function $J(\beta)$
-	- beta_set: 	pool of values of $\beta$ for maximization of $J(\beta)$
+- `Jcurve`:	curvature function $J(\beta)$
+- `beta_set`: 	pool of values of $\beta$ for maximization of $J(\beta)$
 
 _3.4. UTILITY FUNCTIONS_
 
