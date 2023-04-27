@@ -37,11 +37,11 @@ OBS! A fifth input argument (saveFlag) is accepted by RIRIS, which, if set to TR
 
 _3.1. BASIS FUNCTIONS_
 
-Cone-adapted shearlets for every room [every $(T,M)$ combination] and for values of $\tau$ (decomposition scales) 2 to 5. 
+Cone-adapted shearlets for every room (i.e., every $(T,M)$ combination) and for values of $\tau$ (decomposition scales) $2$ to $5$. 
 
-Example: ‘Balder_tau_4.mat’ contains the K x T x M shearlet bases used in the meeting room “Balder” provided a 4-scale dictionary (i.e. K = 61).
+Example: ‘Balder_tau_4.mat’ contains the $K \times T \times M$ shearlet bases used in the meeting room “Balder” provided a 4-scale dictionary (i.e. $K = 61$).
 
-These basis functions are computed with the “Fast Finite Shearlet Transform” toolbox, copyright 2014 Sören Häuser, which is also covered by a GPL v3 license (see COPYING for license terms). 
+These basis functions are computed with the [Fast Finite Shearlet Transform toolbox](https://github.com/rujieyin/toolbox_FFST), copyright 2014 Sören Häuser.
 
 _3.2. MEASUREMENT DATA_
 
