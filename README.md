@@ -3,7 +3,7 @@ RIRIS Room Impulse Response Interpolation with Shearlets
 
 **1. INTRODUCTION**
 
-RIRIS (Room Impulse Response Interpolation with Shearlets) contains the MATLAB implementation of RIR interpolation using fast shearlet transforms[^1,^2]. 
+RIRIS (Room Impulse Response Interpolation with Shearlets) contains the MATLAB implementation of RIR interpolation using fast shearlet transforms[^1][^2]. 
 
 [^1]: [E. Zea, “Compressed sensing of impulse responses in rooms of unknown properties and contents,” J. Sound Vib.  459, 114871 (2019)](http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1340771&dswid=-7099).
 [^2]: [S. Häuser, G. Steidl, 'Fast finite shearlet transform: a tutorial', ArXiv 1202.1773, 1-41 (2012)](https://arxiv.org/abs/1202.1773).
