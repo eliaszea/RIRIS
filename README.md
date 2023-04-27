@@ -1,4 +1,4 @@
-RIRIS -- Room Impulse Response Interpolation with Shearlets
+RIRIS - Room Impulse Response Interpolation with Shearlets
 -----------------------------------------------------------------
 
 **1. INTRODUCTION**
