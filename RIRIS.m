@@ -16,6 +16,7 @@ function RIRIS(room,u,tau,nu_max,saveFlag)
 % DEPENDENCIES(!)
 %       Folders:    'measurementData'                   measured RIRs
 %                   'basisFunctions'                    shearlet dictionary
+%                   'utilityFunctions'                  utility functions
 %                   'regularizationData' (optional)     Pareto thresholds
 %
 %   The shearlet dictionary bases are obtained with the Fast Finite
@@ -33,7 +34,7 @@ function RIRIS(room,u,tau,nu_max,saveFlag)
 %   time (CT) are output in the Command Window. See also Fig. 16 in [1] for further 
 %   details on computation times versus no. thresholding iterations.
 % -----------------------------------------------------------------------------------
-% Copyright 2018-2019 Elias Zea
+% Copyright 2019 Elias Zea
 % RIRIS is covered by a GPL v3 license (see COPYING for license terms)
 % CURRENT RELEASE: VERSION 1.0
 % DATE: 2023-04-27
