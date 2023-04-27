@@ -41,7 +41,7 @@ rho_der2 = fnder(rho_sp,2); rho_prime2 = ppval(rho_der2,beta_set); % rho''
 Jcurve   = ( rho_prime2.*eta_prime1 - rho_prime1.*eta_prime2 )./...
            ( rho_prime1.^2+eta_prime1.^2 ).^1.5;
 % plot curvature function
-figure(2);
+figure(10);
 subplot(1,2,2);
 fig = semilogx(beta_set,Jcurve,'ko');
 set(fig,'linewidth',2,'markersize',8);
@@ -53,7 +53,7 @@ grid on; drawnow;
 [~,idx_max_curv] = max(Jcurve);
 beta_star = beta_set(idx_max_curv);
 % plot L-curve
-figure(2);
+figure(10);
 subplot(1,2,1);
 fig = plot(log(rho),log(eta),'ko');
 set(fig,'linewidth',2,'markersize',8);
