@@ -6,7 +6,7 @@ RIRIS Room Impulse Response Interpolation with Shearlets
 RIRIS (Room Impulse Response Interpolation with Shearlets) contains the MATLAB implementation of RIR interpolation using fast shearlet transforms[^1][^2]. 
 
 [^1]: [E. Zea, “Compressed sensing of impulse responses in rooms of unknown properties and contents,” J. Sound Vib.  459, 114871 (2019)](http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1340771&dswid=-7099).
-[^2]: [S. Häuser, G. Steidl, 'Fast finite shearlet transform: a tutorial', ArXiv 1202.1773, 1-41 (2012)](https://arxiv.org/abs/1202.1773).
+[^2]: [S. Häuser, G. Steidl, “Fast finite shearlet transform: a tutorial,” ArXiv 1202.1773, 1-41 (2012)](https://arxiv.org/abs/1202.1773).
 
 RIRIS is covered by a GPL v3 license (see LICENSE for license terms).
 
@@ -32,7 +32,7 @@ Example of usage: interpolate RIRs in lecture room `Munin`, provided an under-sa
 RIRIS(‘Munin',3,4,20);
 ```
 
-[^3]: [I. Daubechies, M. Defrise, C. De Mol, "An iterative thresholding algorithm for linear inverse problems with a sparsity constraint," Comm. Pure Appl. Math. 57, 1413-1457 (2004)](https://arxiv.org/abs/math/0307152).
+[^3]: [I. Daubechies, M. Defrise, C. De Mol, “An iterative thresholding algorithm for linear inverse problems with a sparsity constraint,” Comm. Pure Appl. Math. 57, 1413-1457 (2004)](https://arxiv.org/abs/math/0307152).
 
 OBS! A fifth input argument, `saveFlag`, is accepted by RIRIS, which, if set to `TRUE`, stores the results (NMSE, MAC, image, image_recov,…) into a .mat file in the folder `dependencies/results`.
 
