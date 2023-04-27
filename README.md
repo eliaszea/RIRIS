@@ -51,7 +51,7 @@ _3.2. MEASUREMENT DATA_
 Reference RIR images for each room. These _.mat_ files are loaded with the utility function `loadRIRs`. The content of each file is a structure `out` with fields: 
 
 	- image:  	T x M numeric array 
-	- fs: 	temporal sampling frequency
+	- fs: 		temporal sampling frequency
 	- T:		no. time samples
 	- M: 		no. microphones
  
