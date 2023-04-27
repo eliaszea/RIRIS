@@ -26,8 +26,9 @@ The optimal threshold parameter is read from ‘dependencies/regularizationData�
 Once the interpolation is finished, Figure 1 outputs the results in the form of RIR images (under-sampled, interpolated, and reference), and Figure 2 outputs the modal assurance criterion (MAC) vs. frequency. In addition, the normalized mean-squared error (NMSE), as well as the computation time (CT), are displayed in the Command Window.
 
 Example of usage: interpolate RIRs in lecture room 'Munin', provided an under-sampling ratio of 3, a shearlet dictionary with 4 scales, and running 20 thresholding (ISTA [3]) iterations:
+
 ```
-	RIRIS(‘Munin',3,4,20);
+RIRIS(‘Munin',3,4,20);
 ```
 
 OBS! A fifth input argument (saveFlag) is accepted by RIRIS, which, if set to TRUE, stores the results (NMSE, MAC, image, image_recov,…) into a .mat file in the folder ‘dependencies/results.’
@@ -45,10 +46,12 @@ These basis functions are computed with the “Fast Finite Shearlet Transform”
 _3.2. MEASUREMENT DATA_
 
 Reference RIR images for each room. These _.mat_ files are loaded with the utility function ‘loadRIRs’. The content of each file is a structure ‘out’ with fields: 
-- image  	T x M numeric array 
-- fs 		temporal sampling frequency
-- T		no. time samples
-- M 		no. microphones
+```
+- image:  	T x M numeric array 
+- fs: 		temporal sampling frequency
+- T:		no. time samples
+- M: 		no. microphones
+```
  
 _3.3. REGULARIZATION DATA_
 
