@@ -65,7 +65,7 @@ In the main script, the default is to load these parameters (avoiding the need t
 
 The content of each .mat file is a structure `reguThresh` with fields:
 
-	- beta_star: 	value of $\beta$ at which $J(\beta)$ attains a maximum
+- `beta_star`: 	value of $\beta$ at which $J(\beta)$ attains a maximum
 	- Jcurve:	curvature function $J(\beta)$
 	- beta_set: 	pool of values of $\beta$ for maximization of $J(\beta)$
 
