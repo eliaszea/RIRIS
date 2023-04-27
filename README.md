@@ -7,13 +7,13 @@ RIRIS (Room Impulse Response Interpolation with Shearlets) contains the MATLAB i
 
 RIRIS is covered by a GPL v3 license (see COPYING for license terms).
 
-**2. INSTALLATION **
+**2. INSTALLATION**
 
 Download the .zip file and extract it in your folder of preference. There is no need to install files, as the dependencies are added (and removed) automatically when running the main script. 
 
 OBS! The folder called ‘dependencies’ must be in the same directory as the main script. The computer storage required by RIRIS is 170 MB. 
 
-**2. MAIN SCRIPT **
+**2. MAIN SCRIPT**
 
 _2.1. RIRIS_
 
