@@ -42,22 +42,22 @@ These basis functions are computed with the “Fast Finite Shearlet Transform”
 _3.2. MEASUREMENT DATA_
 
 Reference RIR images for each room. These _.mat_ files are loaded with the utility function ‘loadRIRs’. The content of each file is a structure ‘out’ with fields: 
->> image;  	# T x M numeric array 
->> fs; 		# temporal sampling frequency
->> T;		# no. time samples
->> M; 		# no. microphones
+- image  	T x M numeric array 
+- fs 		temporal sampling frequency
+- T		no. time samples
+- M 		no. microphones
  
 _3.3. REGULARIZATION DATA_
 
 Optimal threshold parameters $\beta^\star$, for every room and no. decomposition scales, at which $J(\beta)$ attains a maximum (trade-off sparsity and model misfit). 
 
-Example: ‘Freja_u3_tau3.mat’ contains the value of $\beta^\star$ in Freja, given an under-sampling ratio of 3, and 3 decomposition scales. 
+Example: _‘Freja_u3_tau3.mat’_ contains the value of $\beta^\star$ in Freja, given an under-sampling ratio of 3, and 3 decomposition scales. 
 
 In the main script, the default is to load these parameters (avoiding the need to maximize the curvature every time). If one wants to run the maximization of $J(\beta)$ anyway, setting ‘paretoFlag’ to 1 in Line 89 does the trick. Be careful on where these end up stored.
 
 The content of each .mat file is a structure ‘reguThresh’ with fields:
 - beta_star: 	value of $\beta$ at which $J(\beta)$ attains a maximum
-- Jcurve:		curvature function $J(\beta)$
+- Jcurve:	curvature function $J(\beta)$
 - beta_set: 	pool of values of $\beta$ for maximization of $J(\beta)$
 
 _3.4. UTILITY FUNCTIONS_
@@ -87,7 +87,7 @@ Below is an overview of the utility functions that are used in the main script. 
 
 **4. RELEASE HISTORY**
 
-Release #1	 RIRIS v1.0 	E. Zea	2023-04-27
+	Release #1	 RIRIS v1.0 	E. Zea	2023-04-27
 
 
 **5. FEEDBACK & CONTACT INFORMATION**
