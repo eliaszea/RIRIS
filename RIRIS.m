@@ -95,7 +95,7 @@ load(['basisFunctions/' room '_tau' num2str(tau) '.mat'],'Psi'); Sk = Psi;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%             CHOOSING THRESHOLD            %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-paretoFlag = 1; % change to 1 to actually calculate beta_star
+paretoFlag = 0; % change to 1 to actually calculate beta_star
 if ~paretoFlag
     load(['regularizationData/' room '_u' num2str(u) '_tau' ...
           num2str(tau) '.mat'],'reguThresh');
