@@ -26,11 +26,15 @@ The optimal threshold parameter is read from `dependencies/regularizationData` s
 
 Once the interpolation is finished, Figure 1 outputs the results in the form of RIR images (under-sampled, interpolated, and reference), and Figure 2 outputs the modal assurance criterion ($\textrm{MAC}$) vs. frequency. In addition, the normalized mean-squared error ($\textrm{NMSE}$), as well as the computation time ($\textrm{CT}$), are displayed in the Command Window.
 
-Example of usage: interpolate RIRs in lecture room `Munin`, provided an under-sampling ratio of 3, a shearlet dictionary with 4 scales, and running 20 thresholding (ISTA [^3]) iterations:
+Example of usage: interpolate RIRs in lecture room `Balder`, provided an under-sampling ratio of 3, a shearlet dictionary with 4 scales, and running 15 thresholding (ISTA [^3]) iterations:
 
 ```
-RIRIS(‘Munin',3,4,20);
+RIRIS(‘Balder',3,4,15);
 ```
+
+Amd this is how the interpolation results look like: 
+
+![Interpolation result](https://github.com/eliaszea/RIRIS/blob/main/dependencies/example.jpeg)
 
 [^3]: [I. Daubechies, M. Defrise, C. De Mol, “An iterative thresholding algorithm for linear inverse problems with a sparsity constraint,” Comm. Pure Appl. Math. 57, 1413-1457 (2004)](https://arxiv.org/abs/math/0307152).
 
