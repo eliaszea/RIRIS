@@ -32,7 +32,7 @@ Example of usage: interpolate RIRs in lecture room `Balder`, provided an under-s
 RIRIS(‘Balder',3,4,15);
 ```
 
-Amd this is how the interpolation results look like: 
+This is how the interpolation results look like: 
 
 ![Interpolation result](https://github.com/eliaszea/RIRIS/blob/main/dependencies/example.jpeg)
 
