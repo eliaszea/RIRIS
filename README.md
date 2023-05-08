@@ -3,7 +3,7 @@ RIRIS - Room Impulse Response Interpolation with Shearlets
 
 **1. INTRODUCTION**
 
-RIRIS (Room Impulse Response Interpolation with Shearlets) contains the MATLAB implementation of RIR interpolation using fast shearlet transforms[^1][^2]. 
+RIRIS (Room Impulse Response Interpolation with Shearlets) contains the MATLAB implementation of RIR interpolation using fast shearlet transforms[^1][^2], validated with experimental data in three rooms measured at KTH Royal Institute of Technology. 
 
 [^1]: [E. Zea, “Compressed sensing of impulse responses in rooms of unknown properties and contents,” J. Sound Vib.  459, 114871 (2019)](http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1340771&dswid=-7099).
 [^2]: [S. Häuser, G. Steidl, “Fast finite shearlet transform: a tutorial,” ArXiv 1202.1773, 1-41 (2012)](https://arxiv.org/abs/1202.1773).
@@ -44,11 +44,13 @@ OBS! A fifth input argument, `saveFlag`, is accepted by RIRIS, which, if set to 
 
 _3.1. BASIS FUNCTIONS_
 
-Cone-adapted shearlets for every room (i.e., every $(T,M)$ combination) and for values of $\tau$ (decomposition scales) $2$ to $5$. 
+Cone-adapted shearlets for every room (i.e., every $(T,M)$ combination) and for values of $\tau$ (decomposition scales) $2, 3, 4$, and $5$. These are in the form of look-up tables. 
 
 Example: _‘Balder_tau_4.mat’_ contains the $K \times T \times M$ shearlet bases used in the meeting room `Balder` provided a 4-scale dictionary (i.e. $K = 61$).
 
 These basis functions are computed with the [Fast Finite Shearlet Transform toolbox](https://github.com/rujieyin/toolbox_FFST), copyright 2014 Sören Häuser.
+
+OBS! In order to run the code with arbitrarily-sized RIR images, shearlet systems must be created with the desired image dimensions. You can do this in Matlab using [cone-adapted bandlimited shearlet systems](https://www.mathworks.com/help/wavelet/ref/shearletsystem.html).
 
 _3.2. MEASUREMENT DATA_
 
