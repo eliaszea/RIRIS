@@ -29,7 +29,7 @@ Once the interpolation is finished, Figure 1 outputs the results in the form of 
 Example of usage: interpolate RIRs in lecture room `Balder`, provided an under-sampling ratio of 3, a shearlet dictionary with 4 scales, and running 15 thresholding (ISTA [^3]) iterations:
 
 ```
-RIRIS(‘Balder',3,4,15);
+RIRIS('Balder',3,4,15);
 ```
 
 This is how the interpolation results look like: 
